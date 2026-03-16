@@ -1,0 +1,14 @@
+C:\Users\brown\OneDrive\Documents\ReposCSharp\CodeWarsExercise\CodeWarsExercise\bin\Debug\net9.0\CodeWarsExercise.exe
+C:\Users\brown\OneDrive\Documents\ReposCSharp\CodeWarsExercise\CodeWarsExercise\bin\Debug\net9.0\CodeWarsExercise.deps.json
+C:\Users\brown\OneDrive\Documents\ReposCSharp\CodeWarsExercise\CodeWarsExercise\bin\Debug\net9.0\CodeWarsExercise.runtimeconfig.json
+C:\Users\brown\OneDrive\Documents\ReposCSharp\CodeWarsExercise\CodeWarsExercise\bin\Debug\net9.0\CodeWarsExercise.dll
+C:\Users\brown\OneDrive\Documents\ReposCSharp\CodeWarsExercise\CodeWarsExercise\bin\Debug\net9.0\CodeWarsExercise.pdb
+C:\Users\brown\OneDrive\Documents\ReposCSharp\CodeWarsExercise\CodeWarsExercise\obj\Debug\net9.0\CodeWarsExercise.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brown\OneDrive\Documents\ReposCSharp\CodeWarsExercise\CodeWarsExercise\obj\Debug\net9.0\CodeWarsExercise.AssemblyInfoInputs.cache
+C:\Users\brown\OneDrive\Documents\ReposCSharp\CodeWarsExercise\CodeWarsExercise\obj\Debug\net9.0\CodeWarsExercise.AssemblyInfo.cs
+C:\Users\brown\OneDrive\Documents\ReposCSharp\CodeWarsExercise\CodeWarsExercise\obj\Debug\net9.0\CodeWarsExercise.csproj.CoreCompileInputs.cache
+C:\Users\brown\OneDrive\Documents\ReposCSharp\CodeWarsExercise\CodeWarsExercise\obj\Debug\net9.0\CodeWarsExercise.dll
+C:\Users\brown\OneDrive\Documents\ReposCSharp\CodeWarsExercise\CodeWarsExercise\obj\Debug\net9.0\refint\CodeWarsExercise.dll
+C:\Users\brown\OneDrive\Documents\ReposCSharp\CodeWarsExercise\CodeWarsExercise\obj\Debug\net9.0\CodeWarsExercise.pdb
+C:\Users\brown\OneDrive\Documents\ReposCSharp\CodeWarsExercise\CodeWarsExercise\obj\Debug\net9.0\CodeWarsExercise.genruntimeconfig.cache
+C:\Users\brown\OneDrive\Documents\ReposCSharp\CodeWarsExercise\CodeWarsExercise\obj\Debug\net9.0\ref\CodeWarsExercise.dll
