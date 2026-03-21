@@ -1,6 +1,8 @@
 ﻿using System.Collections.Immutable;
 using System.Linq;
 using System.Numerics;
+using System; 
+using System.Collections.Generic;
 
 namespace CodeWarsExercise;
 
@@ -9,6 +11,28 @@ class Program
     public static int FindAverage(int[] nums)
     {
         return  nums.Sum() / nums.Length; 
+    }
+
+    public static string[] Solutions(string str)
+    {
+        if (str.Length % 2 != 0)
+        {
+            str += "_";
+        }
+
+        var result = new string[str.Length / 2];
+        for (int i = 0; i < str.Length; i += 2)
+        {
+            result[i / 2] = str.Substring(i, 2);
+        }
+
+        return result;
+    }
+
+
+    public static string AlphabetPosition(string text)
+    {
+        return text.Count(char.IsLetterOrDigit).ToString();
     }
 
     public static string PrintArray(System.Collections.IEnumerable array)
@@ -55,6 +79,18 @@ class Program
             4 => "madly",
             5 => "not at all",
             _ => throw new ArgumentOutOfRangeException()
+        };
+    }
+
+    public static string Likes(string[] name)
+    {
+        return name.Length switch
+        {
+            0 => "no one likes this",
+            1 => $"{name[0]} likes this",
+            2 => $"{name[0]} and {name[1]} like this",
+            3 => $"{name[0]}, {name[1]} and {name[2]} like this",
+            _ => $"{name[0]}, {name[1]} and {name.Length - 2} others like this"
         };
     }
     public static List<int> RemoveSmallest(List<int> numbers)
@@ -287,5 +323,12 @@ class Program
         Console.WriteLine($"GetRealFloor(15): {GetRealFloor(15)} (Expected: 13)");
         Console.WriteLine($"GetRealFloor(13): {GetRealFloor(13)} (Expected: 12)");
         Console.WriteLine($"GetRealFloor(-3): {GetRealFloor(-3)} (Expected: -3)");
+
+        // Tests for Solutions
+        Console.WriteLine("\n--- Solutions Tests (String split into pairs) ---");
+        string test1 = "abc";
+        string test2 = "abcdef";
+        Console.WriteLine($"Solutions(\"abc\"): {string.Join(", ", Solutions(test1))} (Expected: ab, c_)");
+        Console.WriteLine($"Solutions(\"abcdef\"): {string.Join(", ", Solutions(test2))} (Expected: ab, cd, ef)");
     }
 }
