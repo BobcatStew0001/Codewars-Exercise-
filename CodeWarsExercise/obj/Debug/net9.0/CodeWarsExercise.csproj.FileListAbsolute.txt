@@ -12,3 +12,4 @@ C:\Users\brown\OneDrive\Documents\ReposCSharp\CodeWarsExercise\CodeWarsExercise\
 C:\Users\brown\OneDrive\Documents\ReposCSharp\CodeWarsExercise\CodeWarsExercise\obj\Debug\net9.0\CodeWarsExercise.pdb
 C:\Users\brown\OneDrive\Documents\ReposCSharp\CodeWarsExercise\CodeWarsExercise\obj\Debug\net9.0\CodeWarsExercise.genruntimeconfig.cache
 C:\Users\brown\OneDrive\Documents\ReposCSharp\CodeWarsExercise\CodeWarsExercise\obj\Debug\net9.0\ref\CodeWarsExercise.dll
+C:\Users\brown\OneDrive\Documents\ReposCSharp\CodeWarsExercise\CodeWarsExercise\obj\Debug\net9.0\CodeWarsExercise.sourcelink.json

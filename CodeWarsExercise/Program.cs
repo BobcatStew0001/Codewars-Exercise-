@@ -13,6 +13,19 @@ class Program
         return  nums.Sum() / nums.Length; 
     }
 
+    public static bool IsPangram(string str)
+    {
+        return str.ToLower().Where(char.IsLetter).Distinct().Count() == 26;
+    }
+
+    public static string[] inArray(string[] array1, string[] array2)
+    {
+        return array1.Where(a => array2.Any(b => b.Contains(a)))
+                     .Distinct()
+                     .OrderBy(x => x)
+                     .ToArray();
+    }
+
     public static string[] Solutions(string str)
     {
         if (str.Length % 2 != 0)
@@ -32,7 +45,9 @@ class Program
 
     public static string AlphabetPosition(string text)
     {
-        return text.Count(char.IsLetterOrDigit).ToString();
+        return string.Join(" ", text.ToLower()
+                                    .Where(char.IsLetter)
+                                    .Select(c => c - 'a' + 1));
     }
 
     public static string PrintArray(System.Collections.IEnumerable array)
@@ -330,5 +345,12 @@ class Program
         string test2 = "abcdef";
         Console.WriteLine($"Solutions(\"abc\"): {string.Join(", ", Solutions(test1))} (Expected: ab, c_)");
         Console.WriteLine($"Solutions(\"abcdef\"): {string.Join(", ", Solutions(test2))} (Expected: ab, cd, ef)");
+
+        // Tests for IsPangram
+        Console.WriteLine("\n--- IsPangram Tests ---");
+        string pangram = "The quick brown fox jumps over the lazy dog";
+        string notPangram = "The quick brown fox jumps over the dog";
+        Console.WriteLine($"IsPangram(\"{pangram}\"): {IsPangram(pangram)} (Expected: True)");
+        Console.WriteLine($"IsPangram(\"{notPangram}\"): {IsPangram(notPangram)} (Expected: False)");
     }
 }
