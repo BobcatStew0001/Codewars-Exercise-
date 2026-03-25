@@ -8,16 +8,21 @@ namespace CodeWarsExercise;
 
 class Program
 {
+    //Find the Average 
     public static int FindAverage(int[] nums)
     {
         return  nums.Sum() / nums.Length; 
     }
-
+    
+    
+    //Is this a Pangram
     public static bool IsPangram(string str)
     {
         return str.ToLower().Where(char.IsLetter).Distinct().Count() == 26;
     }
-
+    
+    
+    //Find array2 in array1
     public static string[] inArray(string[] array1, string[] array2)
     {
         return array1.Where(a => array2.Any(b => b.Contains(a)))
@@ -26,6 +31,8 @@ class Program
                      .ToArray();
     }
 
+  
+    //Solutions Challenge 
     public static string[] Solutions(string str)
     {
         if (str.Length % 2 != 0)
@@ -41,15 +48,18 @@ class Program
 
         return result;
     }
+    
 
-
+    //Find the char position in the Alphabet 
     public static string AlphabetPosition(string text)
     {
         return string.Join(" ", text.ToLower()
                                     .Where(char.IsLetter)
                                     .Select(c => c - 'a' + 1));
     }
-
+    
+    
+    //Print the Array 
     public static string PrintArray(System.Collections.IEnumerable array)
     {
         var elements = new List<string>();
@@ -75,14 +85,18 @@ class Program
         return string.Join(",", elements);
     }
     
-
+    
+    //Get the bottom floor in US vs EU:No 13 in US 
     public static int GetRealFloor(int n)
     {
         if (n < 0) return n;
         if (n < 15) return n - 1;
         return n - 2;
     }
-
+    
+    
+    //Number of Petals = Love message
+    
     public static string HowMuchILoveYou(int nbPetals)
     {
         return ((nbPetals - 1) % 6) switch
@@ -96,7 +110,9 @@ class Program
             _ => throw new ArgumentOutOfRangeException()
         };
     }
-
+    
+    
+    //Who Likes this 
     public static string Likes(string[] name)
     {
         return name.Length switch
@@ -108,6 +124,9 @@ class Program
             _ => $"{name[0]}, {name[1]} and {name.Length - 2} others like this"
         };
     }
+    
+    
+    //Remove the smallest 
     public static List<int> RemoveSmallest(List<int> numbers)
     {
         if (numbers == null || numbers.Count == 0) return new List<int>();
@@ -123,7 +142,9 @@ class Program
         result.RemoveAt(minIndex);
         return result;
     }
-
+    
+    
+    //Validate Sudoku board
     public static bool Validate(int[][] board)
     {
         Func<IEnumerable<int>, bool> isValidSection = s =>
@@ -144,7 +165,8 @@ class Program
        
        return rowsValid && colsValid && boxesValid;
 
-
+       
+    //Sum of numbers above 0 
     }
     public static int[] CountPositivesSumNegatives(int[] input)
     {
@@ -158,7 +180,9 @@ class Program
 
         return [countPositives, sumNegatives];
     }
-
+    
+    
+    //Are you playing the banjo
     public static string AreYouPlayingBanjo(string name)
     {
         if (name.First() == 'R' || 'r' == name.First())
@@ -170,18 +194,31 @@ class Program
             return "does not play banjo";
         }
     }
-
+    
+    
+    //Object Check 
+    public static bool Check(object[] a, object x)
+    {
+        var objCheck = a.Contains(x);
+        return objCheck;
+    }
+     
+    //String Counter 
     public static int StrCount(string str, char letter)
     {
         return str.Count(x => x == letter);
         
     }
+    
+    
+    //Positive Sum above 0
     public static int PositiveSum(int[] arr)
     {
         return (arr ?? []).Where(x => x > 0).Sum();
     }
     
-
+    
+    //Return the expression
     public static int ExpressionsMatter(int a, int b, int c)
     {
         return new[]
@@ -194,7 +231,9 @@ class Program
             a * (b + c)
         }.Max();
     }
-
+    
+    
+    //Find the multiples 
     public static List<int> FindMultiples(int n, int limit)
     {
         var result = new List<int>();
@@ -204,30 +243,38 @@ class Program
         }
         return result;
     }
-
+    
+    
+    //High and Low 
     public static string HighandLow(string numbers)
     {
         var nums = numbers.Split(' ').Select(int.Parse).ToList();
         return $"{nums.Max()} {nums.Min()}";
     }
     
-
+    
+    //Find the Min and Max of an Array 
     public static int[] minMax(int[] lst)
     {
         return new[] { lst.Min(), lst.Max() };
     }
-
+    
+    
+    //Merge Arrays 
     public static int[] MergeArrays(int[] arr1, int[] arr2)
     {
         return arr1.Concat(arr2).Order().ToArray();
     }
 
-
+    
+    //Get the size of the box
     public static int[] Get_size(int w, int h, int d)
     {
         return new[] { w, h, d };
     }
-
+    
+    
+    //Main Method Starts Here: Test from Above Methods created and ran by Junie.
     static void Main(string[] args)
     {
         // Tests for HowMuchILoveYou
